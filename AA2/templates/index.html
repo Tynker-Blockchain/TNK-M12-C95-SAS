@@ -17,12 +17,18 @@
 <body>
   <nav class="navbar navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
+      <!-- Logo -->
       <a class="navbar-brand" href="#">
         <img src="/static/assets/your_logo_image_url.png" alt="Logo"  height="40"
             class="d-inline-block align-text-top">
         Art Guard
     </a>
-
+      <div>
+        {% if nodeId %}
+        <h3 style="color: #F7A845">Node: {{nodeId}}</h3>
+      {% endif %}
+    </div>
+      <!-- User Profile Icon with Dropdown Menu -->
       <div class="dropdown">
         <div class="navbar-text me-2" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
